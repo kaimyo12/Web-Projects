@@ -1,0 +1,414 @@
+@import 'alpha-right';
+@import 'alpha-containers';
+
+#container-main{
+	position:absolute;
+
+	#alpha
+	{
+		width: 1330px;
+		height: 620px;
+	}
+
+	
+	#dropdown1
+	{
+		position:absolute;
+	}
+	
+}
+
+p
+{
+	display:inline-block;
+	position: absolute;
+	padding:0;
+	margin:0;
+}
+
+ul, li
+{
+	list-style:none;
+	cursor:pointer;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	z-index: 1;
+}
+
+
+li:hover
+{
+	background-color:darkcyan;
+	border-radius: 6px;
+}
+
+
+#alpha-content{
+	display: inline-block;
+	position:fixed;
+	top:28%;
+	left: 1px;
+	
+	ul
+	{
+	padding:0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 110px;
+    left: -9999em;
+	}
+	
+	.exi
+	{
+    padding: 15px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+	background-color:darkcyan;
+    position: relative;
+	left:60px;
+	top: -80px;
+	}
+	
+	
+	li:hover > ul
+	{
+		top:100%;
+		left:0;
+	}
+	
+}
+
+#dropdown1{
+	display: inline-block;
+	
+	ul
+	{
+	padding:0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 110px;
+    left: -9999em;
+	}
+	
+	li
+	{
+    padding: 15px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+	}
+	
+	
+	li:hover > ul
+	{
+		top:100%;
+		left:0;
+	}
+	
+	#dropdown1-2:hover > ul
+	{
+		top:0;
+		left: 110px;
+	}
+}
+
+#dropdown2{
+	display:inline-block;
+	position:absolute;
+	left: 8%;
+	
+	ul
+	{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 110px;
+    left: -9999em;
+	}
+	
+	li
+	{
+    padding: 15px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+
+    position: relative;
+	}
+	
+	li:hover > ul
+	{
+		top:100%;
+		left:0;
+	}
+	
+	#dropdown2-1:hover > ul
+	{
+		top:0;
+		left: 110px;
+	}
+	
+	#dropdown2-2:hover > ul
+	{
+		top:0;
+		left: 110px;
+	}
+}
+
+#dropdown3{
+	display:inline-block;
+	position:absolute;
+	left: 16%;
+	
+	ul
+	{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 110px;
+    left: -9999em;
+	}
+	
+	li
+	{
+    padding: 15px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+
+    position: relative;
+	}
+	
+	li:hover > ul
+	{
+		top:100%;
+		left:0;
+	}
+	
+	#dropdown3-1:hover > ul
+	{
+		top:0;
+		left: 110px;
+	}
+	
+	#dropdown3-2:hover > ul
+	{
+		top:0;
+		left: 110px;
+	}
+
+}
+
+#dropdown4{
+	display:inline-block;
+	position:absolute;
+	left: 25%;
+	
+	ul
+	{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 110px;
+    left: -9999em;
+	}
+	
+	li
+	{
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+
+    position: relative;
+	}
+	
+	li:hover > ul
+	{
+		top:100%;
+		left:0;
+	}
+	
+	#dropdown4-1:hover > ul
+	{
+		top:0;
+		left: 110px;
+	}
+}
+
+#contact{
+	display:inline-block;
+	position:absolute;
+	left: 33%;
+	color: white;
+	
+	li
+	{
+    padding: 15px 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+
+    position: relative;
+	}
+}
+
+
+.redirect
+{
+	width:50px;
+	height:50px;
+	position:fixed;
+	cursor:pointer;
+}
+
+#rtop
+{
+	top:15%;
+}
+
+#rcontent
+{
+	top:23%;
+}
+
+#ral
+{
+	top:31%;
+	left:8px;
+}
+
+.img
+{
+	p
+	{
+		font-size: 50px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		position: absolute;
+		color: white;
+		z-index:0;
+
+
+	}
+	
+	#p1
+	{
+		top:200px;
+		left: 500px;
+	}
+	
+	#p2
+	{
+		top:300px;
+		left: 530px;
+	}
+}
+
+#container-body
+{
+	width:1320px;
+	height:500px;
+}
+
+.pFades
+{
+	font-size:20px; 
+	font-family: Comic Sans MS, cursive, sans-serif; 
+	text-decoration:underline; 
+	bottom:120px;
+	opacity:0; 
+	cursor:pointer;
+	top:21%;
+}
+
+#blur
+{
+	width:1330px;
+	height:500px;
+}
+
+a, a:visited
+{
+	color:white;
+	text-decoration:none;
+}
+
+.fadeScroll
+{
+	width: 200px; 
+	height: 200px;  
+	position:absolute;
+	border-radius:60%; 
+	opacity:0;
+	bottom: 120px;
+	top:16%;
+}
+
+#words, #words2
+{
+	font-size:20px; 
+	font-family: Comic Sans MS, cursive, sans-serif; 
+}
+
+#words
+{
+	left:27%;
+	top: 14%
+}
+
+#words2
+{
+	left: 30%;
+	top: 15%;
+}
+
+
+#maintenance
+{
+	left:7%;
+}
+
+#pmaintenance
+{
+	left:10%;
+}
+
+#util
+{
+	left:30%;
+}
+
+
+#putil
+{
+	left:34%; 
+}
+
+#transaction
+{
+	left:54%;
+}
+
+#ptransaction
+{
+	left:57%; 
+}
+
+#reports
+{
+	left:77%;
+}
+
+#preports
+{
+	left:82%; 
+}
