@@ -312,7 +312,7 @@ li:hover {
   font-family: Comic Sans MS, cursive, sans-serif;
   text-decoration: underline;
   bottom: 120px;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   top: 21%; }
 
@@ -329,7 +329,7 @@ a, a:visited {
   height: 200px;
   position: absolute;
   border-radius: 60%;
-  opacity: 0;
+  opacity: 1;
   bottom: 120px;
   top: 16%; }
 
@@ -342,7 +342,7 @@ a, a:visited {
   top: 14%; }
 
 #words2 {
-  left: 30%;
+  left: 20%;
   top: 15%; }
 
 #maintenance {
