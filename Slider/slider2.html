@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Sample Image Slideshow</title>
+	<link rel="stylesheet" href="slider2.css" type="text/css" >
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	</head>
+
+<body>	
+<div id="main-cont">
+	<div class="container">
+	
+			<div class="content"><img onmouseover="onPause();" onmouseout="onPlay()" class="slides" src="images/1.jpg"/></div>
+			<div class="content"><img onmouseover="onPause();" onmouseout="onPlay()" class="slides" src="images/2.jpg"/></div>
+			<div class="content"><img onmouseover="onPause();" onmouseout="onPlay()" class="slides" src="images/3.jpg"/></div>
+			<div class="content"><img onmouseover="onPause();" onmouseout="onPlay()" class="slides" src="images/4.jpg"/></div>
+			<div class="content"><img onmouseover="onPause();" onmouseout="onPlay()" class="slides" src="images/5.jpg"/></div>	
+	</div>	
+
+		<a class="btn" onclick="nextImg(-1)"> &#10094 </a>
+		<a class="btn" id="right-btn" onclick="nextImg(1)">&#10095 </a> 
+		
+	<div id="pagerlinks">
+		<button class="curr demo" onclick="currentDiv(1);">1</button> 
+		<button class="curr demo" onclick="currentDiv(2);">2</button> 
+		<button class="curr demo" onclick="currentDiv(3);">3</button> 
+		<button class="curr demo" onclick="currentDiv(4);">4</button> 
+		<button class="curr demo" onclick="currentDiv(5);">5</button> 
+	</div>	
+</div>	
+</body>	
+<script src="slider2.js">
+</script>
+</html>

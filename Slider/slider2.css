@@ -1,0 +1,95 @@
+body {
+  max-width: 750px;
+  margin: 30px auto; }
+
+#main-cont{
+	height: 550px;
+	width: 950px;
+	box-shadow: 0 0 30px black;
+	position: absolute;
+	left: 212px;
+} 
+  
+.container {
+  height: 450px;
+  top: 25px;
+  left: 97px;
+  position:relative;
+  width: 750px;
+  overflow: hidden;
+  box-shadow: 0 0 15px black; }
+  .container .content {
+    position: absolute; }
+  .container .slides {
+    height: 450px;
+    width: 750px;
+    float: left;
+    white-space: nowrap;
+    background-repeat: no-repeat; }
+  .container .hider2 {
+    background-color: white;
+    height: 450px;
+    width: 750px;
+    position: absolute;
+    right: -460px; }
+
+.container2 {
+  height: 450px;
+  width: 750px;
+  overflow: hidden;
+  box-shadow: 0 0 15px black; }
+  .container2 .content2 {
+    position: absolute;
+    right: -460px; }
+  .container2 .slides2 {
+    height: 450px;
+    width: 750px;
+    float: left;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    z-index: 1; }
+
+.btn {
+  position: absolute;
+  float: left;
+  left: 2%;
+  top: 230px;
+  z-index: 2;
+  font-size: 80px;
+  color: black;
+  text-shadow: 0 0 5px black; }
+
+.btn:hover {
+  cursor: pointer; }
+
+#right-btn {
+  left: 93%; }
+
+ul li {
+  list-style: none; }
+
+img:hover {
+  cursor: pointer; }
+
+#pagerlinks {
+  position: relative;
+  margin: 0 auto;
+  left: 350px;
+  top: -16px; }
+
+.pager-color {
+  background-color: tomato;
+  box-shadow: 0 0 10px #ffffff; }
+
+.curr {
+  padding: 15px 30px;
+  font-size: 20;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  position: relative;
+  left: -8%;
+  top: 50px; }
+
+.curr:hover {
+  background-color: tomato; }
+
+/*# sourceMappingURL=slider2.css.map */
