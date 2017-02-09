@@ -108,12 +108,6 @@ function slowFade()
 		});
 }
 
-
-function fadeOut()
-{
-        $(cont).fadeOut(3000);
-}
-
 function fastFade()
 {
 	cont.stop(true);	
