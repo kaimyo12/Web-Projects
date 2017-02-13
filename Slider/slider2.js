@@ -30,7 +30,7 @@ function playSlides()
 	page[slideIndex-1].className+=" pager-color";
 	x[slideIndex-1].style.display = "block";
 	
-    timer = setTimeout(playSlides, 4000); // Change image every 2 seconds
+    timer = setTimeout(playSlides, 4000);
 	
     slowFade();
 }
