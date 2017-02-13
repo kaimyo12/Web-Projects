@@ -96,7 +96,7 @@ function onPause()
 	timer = clearTimeout(timer);
 }
 
-function slowFade()
+function slowFadeFull()      // this function is where I used the whole library's functionality
 {
 	cont.stop(true);	
 	$(document).ready(function(){
@@ -104,6 +104,16 @@ function slowFade()
         $(this).fadeOut(3000);
         });
    });
+}
+
+function slowFade()        // this function is the current one that is working, it's the manual part of the fade in and out
+{
+		cont.stop(true);
+		
+		$(document).ready(function(){
+		$(cont).animate({opacity: 1}, 1000);
+		$(cont).animate({opacity: 0}, 3000);
+		});
 }
 
 function fastFade()
