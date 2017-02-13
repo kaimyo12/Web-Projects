@@ -1,18 +1,17 @@
 var slideIndex = 0;
 var timer;
-var play;
 var cont = $(".content");
 
 playSlides();
 
 function playSlides() 
 {
-	play = true;
+	
     var x = document.getElementsByClassName("slides");
-	var page = document.getElementsByClassName("curr");
+    var page = document.getElementsByClassName("curr");
 	
     for (i = 0; i < x.length; i++) //logic in this loop is to hide all the pictures that're existing in var x(which is class slides);
-	{
+    {
        x[i].style.display = "none";  
     }
 	
@@ -23,8 +22,9 @@ function playSlides()
 		slideIndex = 1;
 	}
 	
-	for(i=0;i<page.length;i++){
-		page[i].className = page[i].className.replace(" pager-color","");
+    for(i=0;i<page.length;i++)
+	{
+	     page[i].className = page[i].className.replace(" pager-color","");
 	}
 	
 	page[slideIndex-1].className+=" pager-color";
@@ -32,7 +32,7 @@ function playSlides()
 	
     timer = setTimeout(playSlides, 4000); // Change image every 2 seconds
 	
-	slowFade();
+    slowFade();
 }
 
 function showImg(n){
@@ -54,9 +54,11 @@ function showImg(n){
 		x[i].style.display="none";
 	}
 	
-	for(i=0;i<page.length;i++){
+	for(i=0;i<page.length;i++)
+	{
 		page[i].className = page[i].className.replace(" pager-color","");
 	}
+	
 	x[slideIndex-1].style.display = "block";	
 	page[slideIndex-1].className+=" pager-color";
 }
@@ -81,10 +83,9 @@ function currentDiv(n)
 
 function onPlay()
 {
-		slowFade();
-		clearTimeout(timer);
-		timer = setTimeout(playSlides, 4000);
-	
+	slowFade();
+	clearTimeout(timer);
+	timer = setTimeout(playSlides, 4000);
 }
 
 function onPause()
@@ -92,29 +93,25 @@ function onPause()
 	
 	$(".content").css({'opacity':'1'});		
 	cont.stop();
-
 	timer = clearTimeout(timer);
 }
 
 function slowFade()
 {
-		cont.stop(true);
-		
-		
-		$(document).ready(function(){
+	cont.stop(true);	
+	$(document).ready(function(){
         $(cont).fadeIn(1000, function(){
         $(this).fadeOut(3000);
         });
-		});
+   });
 }
 
 function fastFade()
 {
 	cont.stop(true);	
-	
     	$(document).ready(function(){
         $(cont).css({'opacity': '0'});
-		$(cont).animate({opacity: 1});
-		});
+	$(cont).animate({opacity: 1});
+   });
     
 }
